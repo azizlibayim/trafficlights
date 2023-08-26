@@ -1,0 +1,99 @@
+body{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    background-color: steelblue;
+    width: 100px;
+    height: 300px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+}
+.circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px black;
+    background: ;
+}
+.red{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    animation: redlight 15s 2s infinite;
+    background-color: red;
+}
+.yellow{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    animation: yellowlight 15s 2s infinite;
+    background-color: yellow;
+}
+.green{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    animation: greenlight 15s 2s infinite;
+    background-color: green;
+}
+@keyframes redlight {
+    0%{
+        background-color: #300;
+    }
+    55%{
+        background-color: #300;
+    }
+    65%{
+        background-color: red;
+    }
+    95%{
+        background-color: red;
+    }
+    100%{
+        background-color: #300;
+    }
+}
+@keyframes yellowlight {
+    0%{
+        background-color: #430;
+    }
+    45%{
+        background-color: #430;
+    }
+    55%{
+        background-color: yellow;
+    }
+    88%{
+        background-color: #430;
+    }
+    100%{
+        background-color: #430;
+    }
+}
+@keyframes greenlight {
+    0%{
+        background-color: #030;
+    }
+    55%{
+        background-color: green;
+    }
+    65%{
+        background-color:green ;
+    }
+    95%{
+        background-color: #030;
+    }
+    100%{
+        background-color: #030;
+    }
+}
+.green,.red,.yellow{
+    animation-duration: 5s;
+}
